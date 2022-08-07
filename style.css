@@ -1,0 +1,30 @@
+#i{padding: 10px;background-color: antiquewhite; color: brown;}
+.c{margin: 10px;background-color: blueviolet; color: blanchedalmond; }
+#staticOctopus {
+    color: white;
+    background-color: green;
+    top: 20px;
+    left: 20px;
+    position: static;
+}
+#relativeOctopus {
+    color: white;
+    background-color: green;
+    top: 20px;
+    left: 20px;
+    position: relative;
+}
+#absoluteOctopus {
+    color: white;
+    background-color: green;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+}
+#fixedOctopus {
+    color: white;
+    background-color: green;
+    top: 20px;
+    left: 20px;
+    position: fixed;
+}
