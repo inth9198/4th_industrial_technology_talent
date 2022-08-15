@@ -1,0 +1,80 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+
+/* start */
+#header_advertisement {
+    height: 42px;
+    max-width: 100%;
+    background: #5F0080;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.header_advertisement_ment {
+    font-size: 14px;
+    color: #FFFF;
+}
+
+#header {
+    height: 100px;
+    position: relative;
+    padding-top: 36px;
+}
+#user_id_serv {
+    position: absolute;
+    max-width: 100%;
+    right: 0px;
+    top: 0px;
+    z-index: 20;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 12px;
+    padding-top: 10px;
+    border: 1px solid black;
+}
+
+#sign_up {
+    display: block;
+    color: rgb(95, 0, 128);
+    cursor: pointer;
+    background-color: transparent;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+#spec {
+    width: 1px;
+    height: 13px;
+    margin: 0px 12px;
+    background-color: rgb(217, 217, 217);
+
+}
+#head_content_1 {
+    flex: 0 0 82px;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+}
