@@ -3,6 +3,7 @@ import Baner from './Baner'
 import Recommand from './Recommand'
 import BannerMid from './BannerMid'
 import SpecialPrice from './SpecialPrice'
+
 export default function Main() {   
     const goodsObjects_1 = [
         {
@@ -29,6 +30,24 @@ export default function Main() {
             goodsCompany:'네네린도',
             goodsName:'평판 스크래쳐 2종',
             goodsPrice:'7,900',
+            goodsDiscountRate:'',
+            goodsDimmedPrice:''
+        },
+        {
+            goodsNum:'1592199656693l0',
+            goodsAbout:'',
+            goodsCompany:'가농바이오',
+            goodsName:'오메가에그 무항생제 1+등급 특란 20구',
+            goodsPrice:'8,800',
+            goodsDiscountRate:'',
+            goodsDimmedPrice:''
+        },
+        {
+            goodsNum:'1592199656693l0',
+            goodsAbout:'',
+            goodsCompany:'가농바이오',
+            goodsName:'오메가에그 무항생제 1+등급 특란 20구',
+            goodsPrice:'8,800',
             goodsDiscountRate:'',
             goodsDimmedPrice:''
         },
@@ -158,6 +177,7 @@ export default function Main() {
             <SpecialPrice specialMent='일일' goodsObjects={goodsObjects_3}/>
             <Recommand recommandMent="놓치면 후회할 가격" goodsObjects={goodsObjects_2}/>
             <Recommand recommandMent="마트 갈 시간이 없어요" goodsObjects={goodsObjects_5}/>
+            
 
         </>
     )
