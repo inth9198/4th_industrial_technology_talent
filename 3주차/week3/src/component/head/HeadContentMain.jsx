@@ -3,7 +3,7 @@ import Logo from './Logo'
 import MarketKurly from './MarketKurly'
 import Spec from './Spec'
 import BeautyKurly from './BeautyKurly'
-import Search from './Search'
+import SearchIn from './SearchIn'
 import GrapBox from './GrapBox'
 
 export default function HeadContentMain() {
@@ -13,7 +13,7 @@ export default function HeadContentMain() {
             <MarketKurly />
             <Spec />
             <BeautyKurly />
-            <Search />
+            <SearchIn />
             <GrapBox />
         </div>
     )

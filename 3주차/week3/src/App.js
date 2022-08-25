@@ -3,13 +3,24 @@ import HeaderAdvertise from "./component/head/HeaderAdvertise";
 import Header from "./component/container/Header";
 import Main from "./component/main/Main";
 import Footer from "./component/footer/Footer";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Search from "./component/search/Search";
 function App() {
   return (
     <div>
-      <HeaderAdvertise />
-      <Header />
-      <Main />
-      <Footer />
+      <BrowserRouter>
+        <HeaderAdvertise />
+        <Header />
+        <Routes>
+          <Route>
+            <Route path="/" element={<Main />}></Route>
+            <Route path="/search" element={<Search />}></Route>
+            <Route path="/goods" element={<Search />}></Route>
+          </Route>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+
     </div>
   );
 }

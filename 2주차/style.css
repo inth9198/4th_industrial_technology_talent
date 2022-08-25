@@ -19,6 +19,9 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+    /* font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; */
 }
 /* HTML5 display-role reset for older browsers */
 a {
@@ -44,6 +47,8 @@ a {
 #header {
     height: 100px;
     position: relative;
+
+
     padding-top: 36px;
     width: 1050px;
     margin: auto;
