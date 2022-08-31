@@ -5,6 +5,8 @@ import Main from "./component/main/Main";
 import Footer from "./component/footer/Footer";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Search from "./component/search/Search";
+import Goods from "./component/goods/Goods";
+
 function App() {
   return (
     <div>
@@ -15,12 +17,11 @@ function App() {
           <Route>
             <Route path="/" element={<Main />}></Route>
             <Route path="/search" element={<Search />}></Route>
-            <Route path="/goods" element={<Search />}></Route>
+            <Route path="/goods" element={<Goods />}></Route>
           </Route>
         </Routes>
         <Footer />
       </BrowserRouter>
-
     </div>
   );
 }

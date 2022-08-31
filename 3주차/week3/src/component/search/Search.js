@@ -5,62 +5,98 @@ import SearchGood from './SearchGood'
 export default function Search() {
     const goodsObjects_1 = [
         {
-            goodsNum:'1623039789318l0',
-            goodsAbout:'',
-            goodsCompany:'오뗄블랙라벨',
-            goodsName:'전지 베이컨',
-            goodsPrice:'3,400',
+            goodsNum:'1588037458735l0',
+            goodsAbout:'샛별배송',
+            goodsCompany:'이즈니',
+            goodsName:'포션 버터 무염',
+            goodsPrice:'12,580',
             goodsDiscountRate:'',
-            goodsDimmedPrice:''
+            goodsDimmedPrice:'',
+            goodsAbout2:'간편하게 더하는 노르망디의 풍미'
         },
         {
-            goodsNum:'1582520823223l0',
-            goodsAbout:'',
-            goodsCompany:'스마일찬',
-            goodsName:'매콤한 진미채 간장볶음',
-            goodsPrice:'3,900',
+            goodsNum:'158201556923l0',
+            goodsAbout:'샛별배송',
+            goodsCompany:'베피노 오첼리',
+            goodsName:'무염버터',
+            goodsPrice:'9,200',
             goodsDiscountRate:'',
-            goodsDimmedPrice:''
+            goodsDimmedPrice:'',
+            goodsAbout2:'깊고 순수한 이탈리아의 맛'
         },
         {
-            goodsNum:'160507747813l0',
-            goodsAbout:'',
-            goodsCompany:'네네린도',
-            goodsName:'평판 스크래쳐 2종',
-            goodsPrice:'7,900',
+            goodsNum:'1532675150282l0',
+            goodsAbout:'샛별배송',
+            goodsCompany:'루어팍',
+            goodsName:'덴마크 버터 2종',
+            goodsPrice:'6,800',
             goodsDiscountRate:'',
-            goodsDimmedPrice:''
+            goodsDimmedPrice:'',
+            goodsAbout2:'부드럽고 진한 풍미의 100% 덴마크 원유 버터'
         },
         {
-            goodsNum:'1592199656693l0',
-            goodsAbout:'',
-            goodsCompany:'가농바이오',
-            goodsName:'오메가에그 무항생제 1+등급 특란 20구',
-            goodsPrice:'8,800',
+            goodsNum:'1585098266488l0',
+            goodsAbout:'샛별배송',
+            goodsCompany:'이즈니',
+            goodsName:'AOP 버터 2종',
+            goodsPrice:'10,800',
             goodsDiscountRate:'',
-            goodsDimmedPrice:''
+            goodsDimmedPrice:'',
+            goodsAbout2:'목초를 먹고 자란 원유로 만들어 프랑스 AOP 인증을 받은 고급 버터 (무염 & 가염)'
         },
         {
-            goodsNum:'1592199656693l0',
-            goodsAbout:'',
-            goodsCompany:'가농바이오',
-            goodsName:'오메가에그 무항생제 1+등급 특란 20구',
-            goodsPrice:'8,800',
+            goodsNum:'1563351539605l0',
+            goodsAbout:'샛별배송',
+            goodsCompany:'르갈',
+            goodsName:'브르타뉴 버터 2종',
+            goodsPrice:'7,600',
             goodsDiscountRate:'',
-            goodsDimmedPrice:''
+            goodsDimmedPrice:'',
+            goodsAbout2:'프랑스 브르타뉴 지역에서 탄생한 풍미가 깊은 버터'
         },
         {
-            goodsNum:'1592199656693l0',
-            goodsAbout:'',
-            goodsCompany:'가농바이오',
-            goodsName:'오메가에그 무항생제 1+등급 특란 20구',
-            goodsPrice:'8,800',
+            goodsNum:'1452157705271l0',
+            goodsAbout:'샛별배송',
+            goodsCompany:'엘엔비르',
+            goodsName:'고메버터 2종',
+            goodsPrice:'8,400',
             goodsDiscountRate:'',
-            goodsDimmedPrice:''
-        }
+            goodsDimmedPrice:'',
+            goodsAbout2:'프랑스인들이 사랑하는 고메버터 (무염 & 가염)'
+        },
+        {
+            goodsNum:'1454463723960l0',
+            goodsAbout:'샛별배송',
+            goodsCompany:'페이장 브레통',
+            goodsName:'포켓버터 3종',
+            goodsPrice:'5,520',
+            goodsDiscountRate:'20',
+            goodsDimmedPrice:'',
+            goodsAbout2:'6,900 프랑스에서 만들어진 산뜻한 버터의 진수'
+        },
+        {
+            goodsNum:'1648537297866l0',
+            goodsAbout:'샛별배송',
+            goodsCompany:'라콩비에트',
+            goodsName:'AOP 비가염 버터(125gX30개입)',
+            goodsPrice:'29,580',
+            goodsDiscountRate:'',
+            goodsDimmedPrice:'',
+            goodsAbout2:'샤랑트 푸아트의 신선함을 그대로'
+        },
+        {
+            goodsNum:'1464333010124l0',
+            goodsAbout:'샛별배송',
+            goodsCompany:'에쉬레',
+            goodsName:'프랑스 전통 AOP 버터 4종',
+            goodsPrice:'17,500',
+            goodsDiscountRate:'',
+            goodsDimmedPrice:'',
+            goodsAbout2:'죽기전에 꼭! 먹어야할 음식 중 하나인 에쉬레 버터! -포션버터'
+        },
     ]
     return (
-        <div>
+        <>
             <div class="search-main">
                     <h3>
                         <span>'</span>
@@ -68,8 +104,8 @@ export default function Search() {
                         <span>'에 대한 검색결과</span>
                     </h3>
             </div>
-
-            <div id="main">
+            
+            <div class="main">
                 <div class="array-flex1">
                     <div>총 11건</div>
                     <div class="array-flex2">
@@ -86,6 +122,6 @@ export default function Search() {
                 </div>
             </div>
             <SearchGood goodsObjects={goodsObjects_1}/>
-        </div>
+        </>
     )
 }

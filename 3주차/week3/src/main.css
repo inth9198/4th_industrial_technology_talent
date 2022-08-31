@@ -275,6 +275,7 @@ a {
     height: 370px;
     object-fit: cover;
 }
+
 .recommand {
     width: 1050px;
     margin: 80px 0px 0px 0px;
@@ -547,7 +548,7 @@ p {
     line-height: 16px;
     white-space: pre-line;
 }
-.goods_infor_number {
+.goods-infor-number {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -1039,4 +1040,81 @@ ul {
 }
 .swiper-slide {
     width: 240px !important;
+}
+.serch-results {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1050px;
+    margin-top: -68px;
+    margin-left: -8px;
+}
+.search-item {
+    width:336px;
+    margin: 7px;
+}
+.array-flex1{
+    width: 1050px;
+    margin: auto;
+}
+
+
+
+
+.banner-body {
+    overflow: hidden;
+    display: flex;
+    margin-top: 20px;
+    min-width: 1050px;
+    height: 370px;
+    object-fit: cover;
+}
+
+.example-container {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next,
+.prev {
+    top: calc(50% - 75px);
+    position: absolute;
+    background: transparent;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+    transform: scale(-1);
+}
+
+.refresh {
+    padding: 10px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
