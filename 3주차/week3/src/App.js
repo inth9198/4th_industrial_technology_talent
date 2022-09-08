@@ -6,23 +6,22 @@ import Footer from "./component/footer/Footer";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Search from "./component/search/Search";
 import Goods from "./component/goods/Goods";
+import LogIn from "./component/login/LogIn";
 
 function App() {
   return (
-    <div>
       <BrowserRouter>
         <HeaderAdvertise />
         <Header />
         <Routes>
-          <Route>
             <Route path="/" element={<Main />}></Route>
             <Route path="/search" element={<Search />}></Route>
             <Route path="/goods" element={<Goods />}></Route>
-          </Route>
+            <Route path="/login" element={<LogIn />}></Route>
+
         </Routes>
         <Footer />
       </BrowserRouter>
-    </div>
   );
 }
 

@@ -9,6 +9,7 @@ export default function SpecialMent({what}) {
         }, 1000);
         return (() => clearInterval(id))
     }, []);
+    
     const date = new Date();
     const sec = time.getSeconds();
     const min = time.getMinutes();

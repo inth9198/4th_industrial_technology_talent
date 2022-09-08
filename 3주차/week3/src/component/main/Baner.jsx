@@ -75,4 +75,3 @@ export default function Baner({jpg}) {
     </div>
     )
 }
-// https://codesandbox.io/s/framer-motion-image-gallery-forked-f3qw8?from-embed=&file=/public/index.html
