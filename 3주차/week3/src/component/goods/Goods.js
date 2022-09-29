@@ -36,34 +36,33 @@ export default function Goods() {
                 </GoodsInforRigt>
             </GoodsInfor>
             <GoodsInfor2>
-                <div className="goods-cost">
-                    <span className="goods-cost-ko">총 상품금액:</span>
-                    &nbsp
-                    <span className="goods-cost-c"> 9,200</span>
-                    <span className="goods-cost-won">원</span>
-                </div>
-                <div>
-                    <span className="goods-al">적립</span>
-                    <span className="goods-al-2">로그인 후, 적립 혜택 제공</span>
-                </div>
+                <GoodsCost>
+                    <AppendSpan>총 상품금액:</AppendSpan>
+                    <GoodsCostC> 9,200</GoodsCostC>
+                    <GoodsCostWon>원</GoodsCostWon>
+                </GoodsCost>
+                <Diving>
+                    <GoodsAl>적립</GoodsAl>
+                    <GoodsAl2>로그인 후, 적립 혜택 제공</GoodsAl2>
+                </Diving>
             </GoodsInfor2>
-            <div className="haert-ring-append">
-                <button className="haert" type="button" width="56" height="56" radius="3">
-                    <span className="haert-span">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yNS44MDcgNy44NjNhNS43NzcgNS43NzcgMCAwIDAtOC4xNzIgMEwxNiA5LjQ5N2wtMS42MzUtMS42MzRhNS43NzkgNS43NzkgMCAxIDAtOC4xNzMgOC4xNzJsMS42MzQgMS42MzQgNy40NjYgNy40NjdhMSAxIDAgMCAwIDEuNDE1IDBzMCAwIDAgMGw3LjQ2Ni03LjQ2N2gwbDEuNjM0LTEuNjM0YTUuNzc3IDUuNzc3IDAgMCAwIDAtOC4xNzJ6IiBzdHJva2U9IiM1RjAwODAiIHN0cm9rZS13aWR0aD0iMS42IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K" alt="" class="css-0"/>
-                    </span>
-                </button>
-                <button className="ring" type="button" disabled="" width="56" height="56" radius="3">
-                    <span className="ring-span">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIHN0cm9rZT0iI0NDQyIgc3Ryb2tlLXdpZHRoPSIxLjYiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTEyLjY2NiAyM2EzLjMzMyAzLjMzMyAwIDEgMCA2LjY2NiAwIi8+CiAgICAgICAgPHBhdGggZD0iTTI1Ljk5OCAyMi43MzhINmwuMDEzLS4wM2MuMDc2LS4xMzUuNDcxLS43MDQgMS4xODYtMS43MDlsLjc1LTEuMDV2LTYuNjM1YzAtNC40ODUgMy40MzgtOC4xNCA3Ljc0MS04LjMwOEwxNiA1YzQuNDQ2IDAgOC4wNSAzLjcyMiA4LjA1IDguMzE0djYuNjM0bDEuNzA3IDIuNDExYy4xNzMuMjUzLjI1NC4zOC4yNDIuMzh6IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="" class="css-0"/>
-                    </span>
-                </button>
-                <div className="append">
-                    <button className="append" type="button" radius="3">
-                        <span className="append_span">장바구니 담기</span>
-                    </button>
-                </div>
-            </div>
+            <HeartRingAppend>
+                <Heart type="button" width="56" height="56" radius="3">
+                    <AppendSpan>
+                        <Imging src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yNS44MDcgNy44NjNhNS43NzcgNS43NzcgMCAwIDAtOC4xNzIgMEwxNiA5LjQ5N2wtMS42MzUtMS42MzRhNS43NzkgNS43NzkgMCAxIDAtOC4xNzMgOC4xNzJsMS42MzQgMS42MzQgNy40NjYgNy40NjdhMSAxIDAgMCAwIDEuNDE1IDBzMCAwIDAgMGw3LjQ2Ni03LjQ2N2gwbDEuNjM0LTEuNjM0YTUuNzc3IDUuNzc3IDAgMCAwIDAtOC4xNzJ6IiBzdHJva2U9IiM1RjAwODAiIHN0cm9rZS13aWR0aD0iMS42IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K" alt="" class="css-0"/>
+                    </AppendSpan>
+                </Heart>
+                <Ring type="button" disabled="" width="56" height="56" radius="3">
+                    <AppendSpan>
+                        <Imging src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIHN0cm9rZT0iI0NDQyIgc3Ryb2tlLXdpZHRoPSIxLjYiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTEyLjY2NiAyM2EzLjMzMyAzLjMzMyAwIDEgMCA2LjY2NiAwIi8+CiAgICAgICAgPHBhdGggZD0iTTI1Ljk5OCAyMi43MzhINmwuMDEzLS4wM2MuMDc2LS4xMzUuNDcxLS43MDQgMS4xODYtMS43MDlsLjc1LTEuMDV2LTYuNjM1YzAtNC40ODUgMy40MzgtOC4xNCA3Ljc0MS04LjMwOEwxNiA1YzQuNDQ2IDAgOC4wNSAzLjcyMiA4LjA1IDguMzE0djYuNjM0bDEuNzA3IDIuNDExYy4xNzMuMjUzLjI1NC4zOC4yNDIuMzh6IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="" class="css-0"/>
+                    </AppendSpan>
+                </Ring>
+                <Append>
+                    <Append type="button" radius="3">
+                        <Buket>장바구니 담기</Buket>
+                    </Append>
+                </Append>
+            </HeartRingAppend>
         </MainInfo>
     </MainGoods1>
     )
@@ -75,6 +74,11 @@ const MainGoods1 = styled.div`
     justify-content: space-between;
     position: relative;
     margin: auto;
+    @media only screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+`
+const BtnStyle = styled.button`
 `
 const MainP = styled.div`
     margin-top: 40px;
@@ -192,5 +196,73 @@ const GoodsInforNum = styled.div`
     height: 28px;
     line-height: 28px;
 `
-const BtnStyle = styled.button`
+const Diving = styled.div`
+`
+const Imging = styled.img`
+`
+const GoodsAl = styled.span`
+    background-color: rgb(255, 191, 0);
+    margin: 1px 6px 0px 0px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    line-height: 20px;
+`
+const GoodsAl2 = styled.span`
+    line-height: 1.45;
+    color: rgb(102, 102, 102);
+`
+const HeartRingAppend = styled.div`
+    display: flex;
+    gap: 8px;
+    margin-top: 20px
+`
+const Heart = styled.button`
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 56px;
+    height: 56px;
+    border-radius: 3px;
+    color: rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 221, 221);
+`
+const Ring = styled.button`
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 56px;
+    height: 56px;
+    border-radius: 3px;
+    color: rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 221, 221);
+`
+const Append = styled.div`
+    display: flex;
+    padding: 0px 10px;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 52px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(95, 0, 128);
+    border: 0px none;
+`
+const AppendSpan = styled.span`
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    
+`
+const Buket = styled.span`
+    margin: auto;
+    font-size: 16px;
+    font-weight: bold;
 `
