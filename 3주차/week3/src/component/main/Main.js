@@ -177,8 +177,6 @@ export default function Main() {
             <SpecialPrice specialMent='일일' goodsObjects={goodsObjects_3}/>
             <Recommand recommandMent="놓치면 후회할 가격" goodsObjects={goodsObjects_2}/>
             <Recommand recommandMent="마트 갈 시간이 없어요" goodsObjects={goodsObjects_5}/>
-            
-
         </>
     )
 }

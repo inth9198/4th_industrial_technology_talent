@@ -1,10 +1,11 @@
-import React,{useRef} from 'react'
+import React,{useEffect, useRef} from 'react'
 import RecomContents from './RecomContents'
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/css"; //basic
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useRecoilState } from 'recoil';
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -22,6 +23,7 @@ export default function Recommand({recommandMent, goodsObjects}) {
         position:"relative",
         padding:"7px"
     }
+
 
     return (
         <div className='recommand'>
@@ -49,9 +51,6 @@ export default function Recommand({recommandMent, goodsObjects}) {
                     return re;
                 })}
             </Swiper>
-            
-            
-            
         </div>
     )
 }
